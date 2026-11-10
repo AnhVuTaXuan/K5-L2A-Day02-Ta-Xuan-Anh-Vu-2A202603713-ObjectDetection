@@ -43,12 +43,10 @@ Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ h
 Tôi đã chạy script `tools/check_yolo_labels.py` để kiểm tra các file nhãn YOLO.
 
 **Kết quả checker:**
-
-```text
 ĐẠT cấu trúc: 50/50 file nhãn hợp lệ.
 Chờ ground truth để chấm chất lượng.
 
-### 3.2. Danh sách ít nhất 10 ảnh đã rà bằng mắt:
+### 3.3. Danh sách ít nhất 10 ảnh đã rà bằng mắt:
 drive_001.jpg
 drive_002.jpg
 drive_003.jpg
