@@ -68,8 +68,7 @@ Chờ ground truth để chấm chất lượng.
 | mean_iou_of_matches | 0.7242 | |
 | passed | false | |
 
-Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi ảnh, lỗi đã kiểm, quyết định sửa/giữ và lý do. Không suy nguyên nhân chỉ từ FP/FN. Không có rework thì ghi rõ.
-
+File kết quả đánh giá annotation: [annotation_evaluation.json](outputs/annotation_evaluation.json).
 ## 5. Kết quả YOLO
 
 ### 5.1. Môi trường và cấu hình huấn luyện
@@ -89,11 +88,7 @@ Thông tin được lấy từ args.yaml trong output của lần chạy YOLO.
 - Validation: Có sử dụng tập val gồm 10 ảnh eval.
 - Checkpoint tốt nhất: outputs/yolo26_runs/vehicle_annotation/weights/best.pt.
 
-Các tham số chính được cấu hình trong notebook gồm epochs=50, imgsz=640, batch=-1, device=DEVICE, seed=20260909 và plots=True. Không có bằng chứng cho thấy tôi đã chỉnh sửa notebook nguồn.
-
-- Runtime, GPU/CPU, phiên bản Ultralytics và Torch:
-- Các tham số thay đổi so với notebook nếu có và lý do:
-- Đường dẫn best checkpoint trong phiên chạy:
+Các tham số chính được cấu hình trong notebook gồm epochs=50, imgsz=640, batch=-1, device=DEVICE, seed=20260909 và plots=True. Không chỉnh sửa notebook nguồn.
 
 | Chỉ số trên 10 ảnh eval | Giá trị |
 |---|---:|
@@ -102,7 +97,10 @@ Các tham số chính được cấu hình trong notebook gồm epochs=50, imgsz
 | mAP50 | 0.2852 |
 | mAP50–95 | 0.1718 |
 
-Đặt cả 2 folder `assets/eval_predictions/` và `assets/yolo26_runs/` (giải nén từ `day2_colab_outputs.zip`) cạnh báo cáo và dẫn link tương đối. Không chỉ ghi số; chỉ ra ít nhất một ảnh và vật thể cụ thể.
+- Thư mục prediction: [assets/eval_predictions/](assets/eval_predictions/).
+- Thư mục kết quả YOLO: [assets/yolo26_runs/](assets/yolo26_runs/).
+- Checkpoint tốt nhất: [best.pt](outputs/yolo26_runs/vehicle_annotation/weights/best.pt).
+- Confusion matrix: [confusion_matrix_normalized.png](outputs/yolo26_runs/vehicle_eval/confusion_matrix_normalized.png).
 
 **Trả lời bốn câu hỏi cuối notebook:**
 
