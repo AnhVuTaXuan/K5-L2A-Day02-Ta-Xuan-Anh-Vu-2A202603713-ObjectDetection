@@ -4,12 +4,12 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email:
-- Lớp:
-- Link repo bài làm:
-- Link Colab đã chạy:
+- Họ tên:Tạ Xuân Anh Vũ
+- MSSV:2A202603173
+- Email:anhvudepzai211104@gmail.com
+- Lớp:2A
+- Link repo bài làm: https://github.com/AnhVuTaXuan/K5-L2A-Day02-Ta-Xuan-Anh-Vu-2A202603713-ObjectDetection
+- Link Colab đã chạy:https://colab.research.google.com/drive/1aIGoYjSzQ2SKcnbTsjmdNh87xjJ6YxEz?usp=drive_link
 
 ## 2. Schema và mini guideline
 
