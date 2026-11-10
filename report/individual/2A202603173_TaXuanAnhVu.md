@@ -99,8 +99,6 @@ Các tham số chính được cấu hình trong notebook gồm epochs=50, imgsz
 
 - Thư mục prediction: [assets/eval_predictions/](assets/eval_predictions/).
 - Thư mục kết quả YOLO: [assets/yolo26_runs/](assets/yolo26_runs/).
-- Checkpoint tốt nhất: [best.pt](outputs/yolo26_runs/vehicle_annotation/weights/best.pt).
-- Confusion matrix: [confusion_matrix_normalized.png](outputs/yolo26_runs/vehicle_eval/confusion_matrix_normalized.png).
 
 **Trả lời bốn câu hỏi cuối notebook:**
 
