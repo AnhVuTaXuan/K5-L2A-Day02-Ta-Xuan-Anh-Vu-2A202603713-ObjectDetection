@@ -22,19 +22,55 @@ Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ h
 - Danh sách ít nhất 10 ảnh đã rà bằng mắt:
 - Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa:
 - Commit khóa nhãn ban đầu:
+## 3. Annotation và self-QC
 
+### 3.1. Kết quả annotation
+
+- **Số file nhãn train:** 50 file `.txt`, tương ứng với 50 ảnh trong `dataset/images/train/`.
+- **Tổng số bounding box:** 1.037 box.
+- **Phân bố nhãn theo class:**
+
+| Class | Class ID | Số bounding box |
+|---|---:|---:|
+| `car` | 0 | 874 |
+| `truck` | 1 | 21 |
+| `bus` | 2 | 98 |
+| `van` | 3 | 44 |
+| **Tổng** | | **1.037** |
+
+### 3.2. Kiểm tra cấu trúc nhãn
+
+Tôi đã chạy script `tools/check_yolo_labels.py` để kiểm tra các file nhãn YOLO.
+
+**Kết quả checker:**
+
+```text
+ĐẠT cấu trúc: 50/50 file nhãn hợp lệ.
+Chờ ground truth để chấm chất lượng.
+
+### 3.2. Danh sách ít nhất 10 ảnh đã rà bằng mắt:
+drive_001.jpg
+drive_002.jpg
+drive_003.jpg
+drive_004.jpg
+drive_005.jpg
+drive_006.jpg
+drive_007.jpg
+drive_008.jpg
+drive_009.jpg
+drive_010.jpg
 ## 4. Gold QC và rework
 
 | Chỉ số | Trước sửa | Sau sửa nếu có |
 |---|---:|---:|
-| TP | | |
-| FP | | |
-| FN | | |
-| Precision | | |
-| Recall | | |
-| F1 | | |
-| mean_iou_of_matches | | |
-| passed | | |
+| TP |420	 | |
+| FP |617	 | |
+| FN |233 | |
+| Precision |0.4050 | |
+| Recall |0.6432 | |
+| F1 |0.4970	 | |
+| mean_iou_of_matches |0.7242	 | |
+| passed |false	 | |
 
 Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi ảnh, lỗi đã kiểm, quyết định sửa/giữ và lý do. Không suy nguyên nhân chỉ từ FP/FN. Không có rework thì ghi rõ.
 
