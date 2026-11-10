@@ -153,4 +153,5 @@ Trong notebook, 10 ảnh eval được khai báo ở split val và được sử
 
 ## 8. Công cụ AI và tài liệu tham khảo
 
-Ghi công cụ đã dùng, dùng ở bước nào và phần đã tự kiểm tra; không dùng thì ghi rõ. Liệt kê nguồn ngoài repo được sử dụng. Không ghi mật khẩu/token hoặc đính kèm gold train.
+Ghi công cụ đã dùng: ChatGPT
+Dùng ở bước phân tích và đánh giá ảnh train, so sánh label sự gắn và growth_truth, tính toán nhanh các giá trị ;
