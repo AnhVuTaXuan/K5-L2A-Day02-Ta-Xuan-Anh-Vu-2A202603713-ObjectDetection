@@ -17,13 +17,6 @@ Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ h
 
 ## 3. Annotation và self-QC
 
-- Số file nhãn train:
-- Kết quả checker và lỗi đã xử lý:
-- Danh sách ít nhất 10 ảnh đã rà bằng mắt:
-- Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa:
-- Commit khóa nhãn ban đầu:
-## 3. Annotation và self-QC
-
 ### 3.1. Kết quả annotation
 
 - **Số file nhãn train:** 50 file `.txt`, tương ứng với 50 ảnh trong `dataset/images/train/`.
